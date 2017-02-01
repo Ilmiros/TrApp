@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<table>
+    <tr>
+        <td>
+            "Спортсмены"
+        </td>
+    </tr>
+    <tr>
+        @foreach (var elem in ViewBag.athletes)
+        {
+            <td>@elem.FirstName</td>
+        }
+    </tr>
+    <tr>
+        <td>"Упражнения"</td>
+    </tr>
+    <tr>
+        @foreach (var elem in ViewBag.exercises)
+        {
+            <td>@elem.Title : @elem.TechnologyDescription</td>
+        }
+    </tr>
+    <tr>
+        <td>
+            <a href="/Exercise/AddExerciseInputsPage/">добавить свое упражнение в общую базу</a>
+        </td>
+    </tr>
+</table>
+
+

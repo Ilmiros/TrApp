@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="backgroundFull">
+        <div id="mainMenu">
+            <div id="avatar"></div>
+        </div>
+        <div id="mainArea">
+            <div id="mainWorkAreaContainer">
+                <div id="navInMainArea"></div>
+                <div id="mainWorkArea">@RenderBody()</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

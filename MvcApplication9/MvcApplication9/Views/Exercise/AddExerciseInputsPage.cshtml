@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "AddExercise";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<form method="post" action="/Exercise/AddExerciseThanksPage/">
+    <table>
+        <tr>
+            <td><p>Название упражнения </p></td>
+            <td><input type="text" name="Title" /> </td>
+        </tr>
+        <tr>
+            <td><p>Описание упражнения</p></td>
+            <td>
+                <input type="text" name="TechnologyDescription" />
+            </td>
+        </tr>
+        <tr><td><input type="submit" value="Отправить" /> </td><td></td></tr>
+    </table>
+</form>
