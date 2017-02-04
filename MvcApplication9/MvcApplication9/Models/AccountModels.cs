@@ -55,11 +55,26 @@ namespace MvcApplication9.Models
         public string ConfirmPassword { get; set; }
     }
 
-    public class LoginModel
+    /*public class LoginModel
     {
         [Required]
         [Display(Name = "User name")]
         public string UserName { get; set; }
+
+        [Required]
+        [DataType(DataType.Password)]
+        [Display(Name = "Password")]
+        public string Password { get; set; }
+
+        [Display(Name = "Remember me?")]
+        public bool RememberMe { get; set; }
+    }*/
+
+    public class LoginModel
+    {
+        [Required]
+        [Display(Name = "User name")]
+        public string FirstName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
@@ -73,8 +88,20 @@ namespace MvcApplication9.Models
     public class RegisterModel
     {
         [Required]
-        [Display(Name = "User name")]
-        public string UserName { get; set; }
+        [Display(Name = "User first name")]
+        public string FirstName { get; set; }
+
+        [Display(Name = "User middle name")]
+        public string MiddleName { get; set; }
+
+        [Display(Name = "User last name")]
+        public string LastName { get; set; }
+
+        [Display(Name = "User login")]
+        public string Login { get; set; }
+
+        [Display(Name = "User gender")]
+        public bool Gender { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]

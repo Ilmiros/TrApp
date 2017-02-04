@@ -120,7 +120,6 @@ C:\repos\MvcApplication9\MvcApplication9\bin\System.Web.Razor.xml
 C:\repos\MvcApplication9\MvcApplication9\bin\System.Web.WebPages.xml
 C:\repos\MvcApplication9\MvcApplication9\bin\System.Web.WebPages.Deployment.xml
 C:\repos\MvcApplication9\MvcApplication9\bin\System.Web.WebPages.Razor.xml
-C:\repos\MvcApplication9\MvcApplication9\bin\WebMatrix.Data.xml
 C:\repos\MvcApplication9\MvcApplication9\bin\Microsoft.Web.WebPages.OAuth.xml
 C:\repos\MvcApplication9\MvcApplication9\bin\WebMatrix.WebData.xml
 C:\repos\MvcApplication9\MvcApplication9\bin\DotNetOpenAuth.AspNet.xml
@@ -160,6 +159,6 @@ C:\repos\MvcApplication9\MvcApplication9\bin\ko\System.Spatial.resources.dll
 C:\repos\MvcApplication9\MvcApplication9\bin\ru\System.Spatial.resources.dll
 C:\repos\MvcApplication9\MvcApplication9\bin\zh-Hans\System.Spatial.resources.dll
 C:\repos\MvcApplication9\MvcApplication9\bin\zh-Hant\System.Spatial.resources.dll
-C:\repos\MvcApplication9\MvcApplication9\obj\Debug\MvcApplication9.csprojResolveAssemblyReference.cache
 C:\repos\MvcApplication9\MvcApplication9\obj\Debug\MvcApplication9.dll
 C:\repos\MvcApplication9\MvcApplication9\obj\Debug\MvcApplication9.pdb
+C:\repos\MvcApplication9\MvcApplication9\obj\Debug\MvcApplication9.csprojResolveAssemblyReference.cache
