@@ -54,7 +54,18 @@ namespace MvcApplication9.Controllers
         {
             WebSecurity.Logout();
 
+            return RedirectToAction("Login", "Account");
+        }
+
+        //
+        // GET: /Account/LogOff
+        //Сделал затычку для перенаправления на главную страницу в случае, если returnUrl при авторизации был ~/Account/LogOff
+        [HttpGet]
+        [ValidateAntiForgeryToken]
+        public ActionResult LogOff(string returnUrl)
+        {
             return RedirectToAction("Index", "Home");
+            /*return View();*/
         }
 
         //

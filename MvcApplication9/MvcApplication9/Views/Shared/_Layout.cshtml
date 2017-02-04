@@ -10,10 +10,19 @@
     <div id="backgroundFull">
         <div id="mainMenu">
             <div id="avatar"></div>
+            @using (Html.BeginForm("LogOff", "Account", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+                @Html.ValidationSummary()
+
+                <fieldset>
+                    <input type="submit" value="выйти" />
+                </fieldset>
+            }
         </div>
         <div id="mainArea">
             <div id="mainWorkAreaContainer">
-                <div id="navInMainArea"></div>
+                <div id="navInMainArea">@Html.ActionLink("На главную", "Index", "Home")</div>
                 <div id="mainWorkArea">@RenderBody()</div>
             </div>
         </div>
