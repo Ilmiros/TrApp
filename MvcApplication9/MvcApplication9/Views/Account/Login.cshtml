@@ -10,7 +10,6 @@
 
 <section id="loginForm">
     <h2>Use a local account to log in.</h2>
-    <span> Произошла ошибка: @ViewBag.exMessage, пожалуйста, обновите страницу и повторите вход </span>
     @using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl }))
     {
         @Html.AntiForgeryToken()
@@ -20,9 +19,9 @@
             <legend>Log in Form</legend>
             <ol>
                 <li>
-                    @Html.LabelFor(m => m.FirstName)
-                    @Html.TextBoxFor(m => m.FirstName)
-                    @Html.ValidationMessageFor(m => m.FirstName)
+                    @Html.LabelFor(m => m.Login)
+                    @Html.TextBoxFor(m => m.Login)
+                    @Html.ValidationMessageFor(m => m.Login)
                 </li>
                 <li>
                     @Html.LabelFor(m => m.Password)

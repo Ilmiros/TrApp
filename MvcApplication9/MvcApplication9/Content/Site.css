@@ -46,6 +46,12 @@ table {
     border: 1px solid black;
     border-collapse: collapse;
 }
+table#registerTable {
+    margin: 10% auto;
+}
+table#registerTable, table#registerTable td {
+    border: none;
+}
 
 td {
     border: 1px solid black;

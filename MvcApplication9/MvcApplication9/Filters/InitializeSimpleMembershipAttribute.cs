@@ -38,7 +38,7 @@ namespace MvcApplication9.Filters
                         }
                     }
 
-                    WebSecurity.InitializeDatabaseConnection("DefaultConnection", "UserProfile", "UserId", "UserName", autoCreateTables: true);
+                    WebSecurity.InitializeDatabaseConnection("DefaultConnection", "Athletes", "Id", "Login", autoCreateTables: true);
                 }
                 catch (Exception ex)
                 {

@@ -23,15 +23,19 @@ namespace MvcApplication9.Models
     {
         [Key]
         [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
-        public int UserId { get; set; }
-        public string UserName { get; set; }
+        public int Id { get; set; }
+        public string Login { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string MiddleName { get; set; }
+        public bool Gender { get; set; }
     }
 
     public class RegisterExternalLoginModel
     {
         [Required]
-        [Display(Name = "User name")]
-        public string UserName { get; set; }
+        [Display(Name = "Login")]
+        public string Login { get; set; }
 
         public string ExternalLoginData { get; set; }
     }
@@ -73,44 +77,44 @@ namespace MvcApplication9.Models
     public class LoginModel
     {
         [Required]
-        [Display(Name = "User name")]
-        public string FirstName { get; set; }
+        [Display(Name = "Логин")]
+        public string Login { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Пароль")]
         public string Password { get; set; }
 
-        [Display(Name = "Remember me?")]
+        [Display(Name = "Запомнить?")]
         public bool RememberMe { get; set; }
     }
 
     public class RegisterModel
     {
         [Required]
-        [Display(Name = "User first name")]
+        [Display(Name = "Логин")]
+        public string Login { get; set; }
+        
+        [Display(Name = "Имя")]
         public string FirstName { get; set; }
 
-        [Display(Name = "User middle name")]
+        [Display(Name = "Отчество")]
         public string MiddleName { get; set; }
 
-        [Display(Name = "User last name")]
+        [Display(Name = "Фамилия")]
         public string LastName { get; set; }
 
-        [Display(Name = "User login")]
-        public string Login { get; set; }
-
-        [Display(Name = "User gender")]
+        [Display(Name = "Пол")]
         public bool Gender { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]
         [DataType(DataType.Password)]
-        [Display(Name = "Password")]
+        [Display(Name = "Пароль")]
         public string Password { get; set; }
 
         [DataType(DataType.Password)]
-        [Display(Name = "Confirm password")]
+        [Display(Name = "Подтвердите пароль")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
     }
