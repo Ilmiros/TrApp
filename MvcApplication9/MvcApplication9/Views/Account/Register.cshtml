@@ -5,7 +5,6 @@
 }
 
 <hgroup class="title">
-    <h1>@ViewBag.Title.</h1>
 </hgroup>
 
 @using (Html.BeginForm()) {
@@ -48,7 +47,7 @@
             <td>@Html.PasswordFor(m => m.ConfirmPassword)</td>
         </tr>
         <tr>
-            <td><input type="submit"/></td>
+            <td><input value="зарегистрироваться" type="submit"/></td>
         </tr>
     </table>
 }

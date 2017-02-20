@@ -46,10 +46,10 @@ table {
     border: 1px solid black;
     border-collapse: collapse;
 }
-table#registerTable {
+table#registerTable, #loginTable {
     margin: 10% auto;
 }
-table#registerTable, table#registerTable td {
+table#registerTable, table#registerTable td, #loginTable, #loginTable td {
     border: none;
 }
 
